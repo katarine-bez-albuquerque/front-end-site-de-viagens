@@ -1,0 +1,636 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+/* Imagem */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Títulos, Textos e links */
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 0.8rem;
+}
+
+a {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* Página */
+
+body {
+    font-family: "Arial";
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body,
+#pagina {
+    width: 100%;
+    height: 100%;
+}
+
+#pagina {
+    background-color: #333333;
+}
+
+/* Header */
+
+#header {
+    width: 100%;
+    height: auto;
+    min-height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../imgs/banner-header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#sec_header,
+#sec_redes_sociais {    
+    height: auto;
+    padding-bottom: 5%;
+}
+
+#sec_header {
+    width: 95%;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#sec_header #descricao {
+    width: 45%;
+    height: auto;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: right;  
+}
+
+#sec_header #descricao h3,
+#sec_header #descricao p {
+    color: #FFF;
+    margin: 10px 0;
+}
+
+#sec_header #descricao a {
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    background-color: #cc590d;
+    border-radius: 18px;
+}
+
+#sec_header #descricao a:hover {
+    background-color: #903300;
+    transition: all 2s ease;
+}
+
+#sec_header #descricao a,
+#sec_header #descricao a:link,
+#sec_header #descricao a:visited,
+#sec_header #descricao a:active {
+    color: #FFF;
+    font-size: 0.8rem;
+}
+
+#sec_redes_sociais {
+    width: 1%;
+    height: auto;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(144, 51, 0, 0.6);
+}
+
+#sec_redes_sociais a img {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+}
+
+/* NAV */
+
+#nav {
+    width: 80%;
+    height: 70px;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo,
+#nav_menu {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo_ag_viagens,
+#nav_menu li a,
+#nav_menu li a:link,
+#nav_menu li a:visited,
+#nav_menu li a:active {
+    color: #FFF;
+}
+
+#nav_menu li a:hover {
+    color: #cc590d;
+}
+
+/* MAIN */
+
+#main {
+    width: 100%;
+    height: auto;
+}
+
+/* CONHECER */
+
+#conhecer {
+    width: 80%;
+    height: auto;
+    padding: 60px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conhecer #descricao {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+#conhecer #descricao .info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#conhecer #descricao .imagem {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#conhecer #descricao .imagem #texto {
+    width: auto;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#conhecer #descricao .imagem img {
+    width: 150px;
+    height: 150px;
+}
+
+#conhecer h4,
+#conhecer p,
+#conhecer h5 {
+    color: #FFF;
+    line-height: 1.8rem;
+}
+
+#conhecer h5 {
+    text-transform: uppercase;
+}
+
+#conhecer .imagem #texto p {
+    text-align: right;
+}
+
+#conhecer .imagem #texto p:hover {
+    color: #cc590d;
+    cursor: pointer;
+}
+
+#conhecer h4 strong {
+    color: #cc590d;
+}
+
+/* EXISTÊNCIA */
+
+#existencia {
+    width: 80%;
+    height: auto;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#existencia img {
+    width: 200px;
+    height: auto;
+    margin: 0 10px 0 10px;
+}
+
+#existencia h5 {
+    color: #FFF;
+}
+
+#existencia h5 strong {
+    color: #cc590d;
+}
+
+/* BANNERS MAIN */
+
+#banners_main {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+#banners_main .banners {
+    width: 25%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+#banners_main .banners p {
+    color: #FFF;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+}
+
+#banners_main .banners img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+#sec_main {
+    width: 80%;
+    height: auto;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec_main .icones {
+    width: 33.3%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec_main .icones p {
+    color: #FFF;
+}
+
+#sec_main .icones img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+/* ASIDE */
+
+#aside {
+    width: 80%;
+    height: auto;
+    padding: 60px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aside h4 {
+    color: #FFF;
+}
+
+#aside h4 strong {
+    color: #cc590d;
+}
+
+/* CONTATO */
+
+#contato {
+    width: 80%;
+    height: auto;
+    padding: 0 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#contato .sec_contato {
+    width: 30%;
+}
+
+#contato .sec_contato_form {
+    width: 50%;
+}
+
+#contato .sec_contato {
+    height: 100%;
+    padding: 60px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#contato .sec_contato h6 {
+    color: #FFF;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+#contato .sec_contato_form {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#contato .sec_contato_form .form_sec_contato {
+    width: 50%;
+    height: 100%;
+}
+
+.form_sec_contato input[type="text"],
+.form_sec_contato input[type="email"] {
+    width: 94%;
+}
+
+.form_sec_contato input[type="text"],
+.form_sec_contato input[type="email"],
+.form_sec_contato textarea {    
+    height: 21.5px;
+    padding: 10px 1.5%;
+    margin: 3px;
+    font-size: 0.7rem;
+}
+
+.form_sec_contato textarea {
+    width: 70%;
+    height: 70px;
+}
+
+.form_sec_contato input[type="submit"] {
+    width: 72.5%;
+    height: 21.5px;
+    padding: 10px 1.5%;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cc590d;
+    color: #FFF;
+    font-size: 0.7rem;
+    font-weight: 700;   
+    text-transform: uppercase; 
+    cursor: pointer;
+}
+
+.form_sec_contato input[type="submit"]:hover {
+    background-color: #903300;
+    transition: all 2s ease;
+}
+
+/* FOOTER */
+
+#footer {
+    width: 80%;
+    height: auto;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #903300;
+}
+
+#footer .footer_descricao {
+    width: auto;
+}
+
+#footer .footer_descricao h6 {
+    color: #FFF;
+}
+
+/* MOBILE */
+
+@media(max-width: 786px) {
+    /* TÍTULO, TEXTO, LINK */
+    
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    
+    h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    h5 {
+        font-size: 1rem;
+    }
+    
+    h6 {
+        font-size: 0.8rem;
+    }
+    
+    a {
+        font-size: 0.8rem;
+    }
+    
+    p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    /* HEADER */
+
+    #sec_header {
+        width: 100%;
+        height: 300px;
+        padding-bottom: 30px;
+        flex-wrap: wrap;
+        order: 2;
+    }
+
+    #sec_redes_sociais {
+        width: 80%;
+        padding: 2% 10%;
+        order: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: #903300;
+    }
+
+    #sec_redes_sociais a img {
+        width: 16px;
+        height: 16px;
+    }
+
+    #sec_header #descricao {
+        width: 80%;
+        padding: 0 10%;     
+        text-align: center;   
+        align-items: center;
+    }
+
+    /* CONHECER */
+
+    #conhecer #descricao {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #conhecer #descricao .info,
+    #conhecer #descricao .imagem {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    #conhecer #descricao .imagem {
+        justify-content: center;
+    }
+
+    /* EXISTÊNCIA */
+
+    #existencia {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+
+    #existencia img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    /* BANNERS MAIN */
+
+    #banners_main {
+        flex-wrap: wrap;
+    }
+
+    #banners_main .banners {
+        width: 50%;
+    }
+
+    #sec_main .icones img {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* CONTATO */
+
+    #contato {
+        flex-wrap: wrap;
+    }
+
+    #contato .sec_contato,
+    #contato .sec_contato_form {
+        width: 100%;
+    }
+
+    #contato .sec_contato {
+        align-items: center;
+    }
+
+    #contato .sec_contato_form {
+        flex-wrap: wrap;
+    }
+
+    #contato .sec_contato_form .form_sec_contato {
+        width: 100%;
+    }
+    
+    .form_sec_contato textarea {
+        width: 94%;
+    }
+
+    .form_sec_contato input[type="submit"] {
+        width: 97%;
+    }
+
+    /* FOOTER */
+
+    #footer {
+        flex-wrap: wrap;
+    }
+
+    #footer .footer_descricao {
+        width: 100%;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+}
